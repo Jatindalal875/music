@@ -39,7 +39,7 @@ async def telegraph(client, message):
     else:
         await message.reply(
             f"**Yooo!\n\n👉 https://telegra.ph{response[0]}**",
-            disable_web_page_preview=True,
+            disable_web_page_preview=False,
         )
     finally:
         os.remove(download_location)
